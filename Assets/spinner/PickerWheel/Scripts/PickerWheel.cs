@@ -19,13 +19,6 @@ namespace EasyUI.PickerWheelUI {
       [SerializeField] private Transform wheelPiecesParent ;
 
       [Space]
-      [Header ("Sounds :")]
-      [SerializeField] private AudioSource audioSource ;
-      [SerializeField] private AudioClip tickAudioClip ;
-      [SerializeField] [Range (0f, 1f)] private float volume = .5f ;
-      [SerializeField] [Range (-3f, 3f)] private float pitch = 1f ;
-
-      [Space]
       [Header ("Picker wheel settings :")]
       [Range (1, 20)] public int spinDuration = 8 ;
       [SerializeField] [Range (.2f, 2f)] private float wheelSize = 1f ;
@@ -70,17 +63,9 @@ namespace EasyUI.PickerWheelUI {
          if (nonZeroChancesIndices.Count == 0)
             Debug.LogError ("You can't set all pieces chance to zero") ;
 
-
-         SetupAudio () ;
-
       }
 
-      private void SetupAudio () {
-         audioSource.clip = tickAudioClip ;
-         audioSource.volume = volume ;
-         audioSource.pitch = pitch ;
-      }
-
+ 
       private void Generate () {
          wheelPiecePrefab = InstantiatePiece () ;
 
@@ -146,14 +131,11 @@ namespace EasyUI.PickerWheelUI {
             bool isIndicatorOnTheLine = false ;
 
             wheelCircle
-            .DORotate (targetRotation, spinDuration, RotateMode.Fast)
+            .DORotate (targetRotation, spinDuration, RotateMode.FastBeyond360)
             .SetEase (Ease.InOutQuart)
             .OnUpdate (() => {
                float diff = Mathf.Abs (prevAngle - currentAngle) ;
                if (diff >= halfPieceAngle) {
-                  if (isIndicatorOnTheLine) {
-                     audioSource.PlayOneShot (audioSource.clip) ;
-                  }
                   prevAngle = currentAngle ;
                   isIndicatorOnTheLine = !isIndicatorOnTheLine ;
                }
