@@ -2072,29 +2072,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'There are so many instructions here
-
-    Lots of things to know
-
-    serguseouonco''egre
-
-    sngrsiovng
-
-    nigorpcngirpongvtrp
-
-    vgsr
-
-    nvgionvierpnvgesropvgnepnveorpegvnerovni
-
-    snv
-
-    vpenivpoerniveronvgiesopngve
-
-    ngvepnvgeorpnvieropnierovniopvnioenv
-
-    evn
-
-    esnvpesincopeingvoepnvgeorpnsepovner'
+  m_Text: "1. Each Player spins twice before moving along the board:\n\t\tFirst spin
+    is to determine one\u2019s nepotism \n\t\tSecond spin is to determine loans for
+    college\n2. Spin and move that many spaces on the board. Follow what pops up
+    for the space you landed on. \n3. When you land on a color you have the option
+    to buy those color houses. Whenever someone else lands on your house tiles they
+    have to pay rent.\n4. Whoever ends the game with the most money wins!\n"
 --- !u!222 &2138045182
 CanvasRenderer:
   m_ObjectHideFlags: 0
