@@ -110,8 +110,10 @@ namespace EasyUI.PickerWheelUI {
 
             int index = GetRandomPieceIndex () ;
             WheelPiece piece = wheelPieces [ index] ;
+                Debug.LogError("Wheel piece chosen is:" + index);
 
-            if (piece.Chance == 0 && nonZeroChancesIndices.Count != 0) {
+
+                if (piece.Chance == 0 && nonZeroChancesIndices.Count != 0) {
                index = nonZeroChancesIndices [ Random.Range (0, nonZeroChancesIndices.Count) ] ;
                piece = wheelPieces [ index ] ;
             }
