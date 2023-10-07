@@ -7,7 +7,7 @@ using System.Collections.Generic ;
 namespace EasyUI.PickerWheelUI {
 
    public class PickerWheel : MonoBehaviour {
-
+        
       [Header ("References :")]
       [SerializeField] private GameObject linePrefab ;
       [SerializeField] private Transform linesParent ;
@@ -17,6 +17,7 @@ namespace EasyUI.PickerWheelUI {
       [SerializeField] private Transform wheelCircle ;
       [SerializeField] private GameObject wheelPiecePrefab ;
       [SerializeField] private Transform wheelPiecesParent ;
+      [SerializeField] public int steps; //Defining var for number of steps taken based on spin
 
       [Space]
       [Header ("Picker wheel settings :")]
@@ -108,10 +109,11 @@ namespace EasyUI.PickerWheelUI {
             if (onSpinStartEvent != null)
                onSpinStartEvent.Invoke () ;
 
-            int index = GetRandomPieceIndex () ;
+            int index = GetRandomPieceIndex () ; //This is where steps come from
             WheelPiece piece = wheelPieces [ index] ;
                 Debug.LogError("Wheel piece chosen is:" + index);
-
+                steps = index + 1;
+                Debug.LogError("Steps are:" + steps);
 
                 if (piece.Chance == 0 && nonZeroChancesIndices.Count != 0) {
                index = nonZeroChancesIndices [ Random.Range (0, nonZeroChancesIndices.Count) ] ;
