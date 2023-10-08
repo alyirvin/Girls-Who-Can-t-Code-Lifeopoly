@@ -40,7 +40,7 @@ public class PlayerNames : MonoBehaviour
     {
         input = NameInputField.text;
         Debug.Log(input);
-        HUD.AddComponent(HUD.createPlayer(input));
+        //HUD.AddComponent(HUD.createPlayer(input));
         if (turn < 4)
         {
             setPlayerToggle(input);
