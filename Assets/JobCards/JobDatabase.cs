@@ -28,8 +28,8 @@ public class JobDatabase : MonoBehaviour
 
     public void GenerateJobs()
     {
-        Random random = new Random();
-        int selected = random.Next();
-
+        //Random random = new Random();
+        //int selected = random.Next();
+        Debug.LogError(JobList[Random.Range(0, JobList.Count)]);
     }
 }
