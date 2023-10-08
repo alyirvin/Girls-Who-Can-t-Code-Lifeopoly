@@ -19,17 +19,18 @@ public class Trigger : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Renderer render = GetComponent<Renderer>();
+        int collegeRoll = 0;
 
         collegeRoll = Random.Range(1, 11);
         Debug.Log("Number Spun: " + collegeRoll);
 
         if (collegeRoll < 3)
         {
-            
+            Debug.Log("lol");
         }
         else
         {
-            continue;
+            Debug.Log("Congratulations!");
         }
     }
 }
