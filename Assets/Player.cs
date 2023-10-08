@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Player : MonoBehaviour
 {
     private string playerName;
@@ -23,7 +24,7 @@ public class Player : MonoBehaviour
         finStatus = "Unknown";
         salary = 0;
         bonus = 0;
-        homes = new ArrayList(){};
+        homes = new ArrayList();
     }
 
     public void setJobInfo(string jobTitle, int salary, int bonus)
@@ -53,10 +54,15 @@ public class Player : MonoBehaviour
         this.finStatus = statuses[stat-1];
     }
 
+    public void addHomes(string color)
+    {
+        this.homes.Add(color);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
