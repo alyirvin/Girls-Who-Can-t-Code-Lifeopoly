@@ -10,13 +10,13 @@ public class Job
     private string JobTitle;
     private int Income;
     private int Bonus;
-    public ArrayList JobOptions;
-/*
+    //public ArrayList JobOptions;
+
     public Job()
     {
 
     }
-*/
+
 
     public Job(int id, string title, int job_income, int job_bonus)
     {
@@ -25,7 +25,7 @@ public class Job
         Income = job_income;
         Bonus = job_bonus;
     }
-
+/*
     // Start is called before the first frame update
     void Start()
     {
@@ -47,10 +47,11 @@ public class Job
         JobOptions.Add(Job Developer = new Job("App Developer", 14, 60000, 100000));
         JobOptions.Add(Job Engineer = new Job("Engineer", 15, 80000, 90000,));
     }
-
+*/
     // Update is called once per frame
     void Update()
     {
-        
+        //JobList[Random.Range(0, deckList.Count)];
+        // Debug.LogError(JobList[Random.Range(0, deckList.Count)]);
     }
 }
