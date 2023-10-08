@@ -14,6 +14,15 @@ public class PlayerNames : MonoBehaviour
     public static int turn;
     public TMP_Text NameFieldText;
     public TMP_InputField NameInputField;
+    public Button P4;
+    public TextMeshProUGUI P4Name;
+    public Button P3;
+    public TextMeshProUGUI P3Name;
+    public Button P2;
+    public TextMeshProUGUI P2Name;
+    public Button P1;
+    public TextMeshProUGUI P1Name; 
+
     //public void createPlayer(string name);
     //public Player(string name);
 
@@ -35,6 +44,7 @@ public class PlayerNames : MonoBehaviour
         input = s;
         Debug.Log(input);
         (new PlayerMakers()).createPlayer(input);
+        setPlayerToggle(input);
         turn++;
         NameInputField.text = "";
         if (turn < 4)
@@ -52,6 +62,27 @@ public class PlayerNames : MonoBehaviour
     public void ToggleNameInput()
     {
         NameInput.SetActive(!NameInput.activeInHierarchy);
+    }
+
+    public void setPlayerToggle(string name)
+    {
+        if (turn % 4 == 0)
+        {
+            //P1Name = P1.GetComponentInChildren<TextMeshProUGUI>();
+            P1Name.text = name;
+        }
+        else if (turn % 4 == 1)
+        {
+            P2Name.text = name;
+        }
+        else if (turn % 4 == 2)
+        {
+            P3Name.text = name;
+        }
+        else if (turn % 4 == 3)
+        {
+            P4Name.text = name;
+        }
     }
 }
 
