@@ -68,8 +68,8 @@ public class PlayerNames : MonoBehaviour
     {
         if (turn % 4 == 0)
         {
-            //P1Name = P1.GetComponentInChildren<TextMeshProUGUI>();
-            P1Name.text = name;
+            P1.GetComponentInChildren<TMP_Text>().text = name;
+            //P1Name.text = name;
         }
         else if (turn % 4 == 1)
         {
