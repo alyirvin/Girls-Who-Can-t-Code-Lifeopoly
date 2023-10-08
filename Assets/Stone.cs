@@ -26,7 +26,7 @@ public class Stone : MonoBehaviour
             }
             else
             {
-                Debug.Log("Rolled Number is too high");
+                Debug.Log("Congratulations! You are retired!l");
             }
         }
     }
