@@ -7,7 +7,7 @@ using TMPro;
 
 public class Increase10 : MonoBehaviour
 {
-    public int playerMoneyInt1;
+    public int playerMoneyInt1 = 0;
     public TMP_Text MoneyAmount1;
 
     [ContextMenu("Increase10 Money")]
