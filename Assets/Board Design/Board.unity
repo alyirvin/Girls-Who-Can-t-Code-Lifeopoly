@@ -163,11 +163,18 @@ Transform:
   m_GameObject: {fileID: 25581705}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 894879091}
+=======
+  m_LocalPosition: {x: 8.506612, y: -5.590775, z: -17.06497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+>>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &45258114
@@ -462,6 +469,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1409923808}
+<<<<<<< Updated upstream
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &83708393
 GameObject:
@@ -494,6 +502,8 @@ Transform:
   m_Children:
   - {fileID: 403871715}
   m_Father: {fileID: 0}
+=======
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &89651968
 GameObject:
@@ -1219,6 +1229,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1409923808}
+<<<<<<< Updated upstream
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &150881728
 GameObject:
@@ -1251,6 +1262,8 @@ Transform:
   m_Children:
   - {fileID: 686164833}
   m_Father: {fileID: 0}
+=======
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &184401963
 GameObject:
@@ -4508,6 +4521,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1409923808}
+<<<<<<< Updated upstream
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &967184990
 GameObject:
@@ -4540,6 +4554,8 @@ Transform:
   m_Children:
   - {fileID: 1871691967}
   m_Father: {fileID: 0}
+=======
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1011783672
 GameObject:
@@ -7405,6 +7421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childNodeList:
   - {fileID: 875732837}
+<<<<<<< Updated upstream
   - {fileID: 118110450}
   - {fileID: 2117567243}
   - {fileID: 567633592}
@@ -7488,6 +7505,11 @@ MonoBehaviour:
   - {fileID: 734533160}
   - {fileID: 1879396372}
   - {fileID: 89651972}
+=======
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!4 &1409923808
 Transform:
   m_ObjectHideFlags: 0
@@ -11638,9 +11660,12 @@ SceneRoots:
   - {fileID: 1555474902}
   - {fileID: 2086664365}
   - {fileID: 25581707}
+<<<<<<< Updated upstream
   - {fileID: 967184991}
   - {fileID: 83708394}
   - {fileID: 150881729}
+=======
+>>>>>>> Stashed changes
   - {fileID: 1409923808}
   - {fileID: 1241680130}
   - {fileID: 711603363}
