@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Start screen/Start-Instructions UI.unity
+    guid: 1d255aad3c022b145a52fae56923aeae
+  - enabled: 1
     path: Assets/Board Design/Board.unity
     guid: 9a2999b92c66e40199aa71806e5af55c
+  - enabled: 1
+    path: Assets/spinner/ThatsLife.unity
+    guid: 0602edffb13ac4625a980a5ba5ed8ee0
   m_configObjects: {}

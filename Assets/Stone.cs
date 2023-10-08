@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class Stone : MonoBehaviour
@@ -27,6 +28,7 @@ public class Stone : MonoBehaviour
             else
             {
                 Debug.Log("Congratulations! You are retired!l");
+                SceneManager.LoadScene("ThatsLife");
             }
         }
     }
