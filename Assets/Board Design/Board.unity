@@ -11630,7 +11630,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -11641,8 +11641,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1. Write things here\n2. Challenge your enemies to mortal combat\n3. Cheat
-    and slay them\n4. Celebrate on their graves\n5. Win the game \n6. RAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"
+  m_Text: "1. Each Player spins twice before moving along the board:\n\tFirst spin
+    is to determine one\u2019s nepotism \n\tSecond spin is to determine loans for
+    college\n2. Spin and move that many spaces on the board. Read what pops up for
+    the space you landed on. Types of spaces could be:\n\tStop Signs -> Required
+    spaces for you to stop at (graduation college, get married, etc)\n\tPaydays ->
+    get paid your career\u2019s income\n\tBaby -> add a baby to your household\n3.
+    Each color represents a set of houses. When you land on one you have the option
+    to buy those color houses. Whenever someone else lands on your house tiles they
+    have to pay rent.\n4. Whoever ends the game with the most money wins!\n"
 --- !u!222 &1191298117
 CanvasRenderer:
   m_ObjectHideFlags: 0
