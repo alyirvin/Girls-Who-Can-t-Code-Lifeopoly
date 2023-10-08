@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerNames : MonoBehaviour
 {
     private string input;
+    //public Player(string name);
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class PlayerNames : MonoBehaviour
     public void ReadInput(string s)
     {
         input = s;
-        Debug.log(input);
+        //Player(input);
+        Debug.Log(input);
     }
 }
