@@ -18,6 +18,7 @@ public class PlayerNames : MonoBehaviour
     public Button P3;
     public Button P2;
     public Button P1; 
+    public GameObject HUD;
 
     //public void createPlayer(string name);
     //public Player(string name);
@@ -39,7 +40,7 @@ public class PlayerNames : MonoBehaviour
     {
         input = NameInputField.text;
         Debug.Log(input);
-        (new PlayerMakers()).createPlayer(input);
+        HUD.AddComponent(HUD.createPlayer(input));
         if (turn < 4)
         {
             setPlayerToggle(input);
@@ -82,6 +83,11 @@ public class PlayerNames : MonoBehaviour
             P4.GetComponentInChildren<TMP_Text>().text = name;
         }
     }
+
+    public void togglePlayerCard(GameObject card)
+    {
+        card.SetActive(!card.activeInHierarchy);
+    }
 }
 
 namespace PlayerSpace
@@ -110,6 +116,7 @@ namespace PlayerSpace
             else if (turn % 4 == 3)
             {
                 Player player4 = new Player(name);
+                player4.generateCard(player4);
                 Debug.Log(name);
             }
             turn++;

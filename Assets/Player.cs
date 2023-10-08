@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-
-public class Player : MonoBehaviour
+public class Player
 {
     private string playerName;
     private string jobTitle;
@@ -14,6 +14,14 @@ public class Player : MonoBehaviour
     private int salary;
     private int bonus;
     private ArrayList homes;
+
+    public TMP_Text PlayerName;
+    public TMP_Text CarCountNum;
+    public TMP_Text JobTitle;
+    public TMP_Text JobSalary;
+    public TMP_Text BonusNum;
+    public TMP_Text HomesArray;
+    public TMP_Text FStatusArray;
 
     public Player(string name)
     {
@@ -59,16 +67,14 @@ public class Player : MonoBehaviour
         this.homes.Add(color);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void generateCard(Player player)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        PlayerName.text = player.playerName;
+        CarCountNum.text = player.numPeople.ToString();
+        JobTitle.text = player.jobTitle;
+        JobSalary.text = player.salary.ToString();
+        BonusNum.text = player.bonus.ToString();
+        FStatusArray.text = player.finStatus;
     }
 }
 
