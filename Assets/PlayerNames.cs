@@ -20,6 +20,6 @@ public class PlayerNames : MonoBehaviour
     public void ReadInput(string s)
     {
         input = s;
-        Debug.log(input);
+        Debug.LogError(input);
     }
 }
