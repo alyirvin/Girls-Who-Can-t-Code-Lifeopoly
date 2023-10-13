@@ -21,16 +21,18 @@ namespace PlayerSpace
         public Button P2;
         public Button P1; 
         public GameObject HUD;
-        public TMP_Text Player1StatsHeader;
+        //public GameObject P1Card;
+        public TMP_Text PlayerStatsHeader;
         public TMP_Text CarCountNum;
         public TMP_Text JobTitle;
         public TMP_Text JobSalary;
         public TMP_Text BonusNum;
         public TMP_Text HomesArray;
         public TMP_Text FStatusArray;
-
-        //public void createPlayer(string name, int turn) {get;set;}
-        //public Player(string name);
+        public Player Player1;
+        public Player Player2;
+        public Player Player3;
+        public Player Player4;
 
         // Start is called before the first frame update
         void Start()
@@ -77,20 +79,27 @@ namespace PlayerSpace
             if (turn == 0)
             {
                 P1.GetComponentInChildren<TMP_Text>().text = name.ToUpper();
-                //createPlayer(name, turn);
-                Player1StatsHeader.text = name.ToUpper() + " STATS";
+                //PlayerStatsHeader.text = name.ToUpper() + " STATS";
+                Player1.setPlayerName(name);
+                //P1Card.GetComponent<Player>().playerName = name;
             }
             else if (turn == 1)
             {
                 P2.GetComponentInChildren<TMP_Text>().text = name.ToUpper();
+                //PlayerStatsHeader.text = name.ToUpper() + " STATS";
+                Player2.setPlayerName(name);
             }
             else if (turn == 2)
             {
                 P3.GetComponentInChildren<TMP_Text>().text = name.ToUpper();
+                //PlayerStatsHeader.text = name.ToUpper() + " STATS";
+                Player3.setPlayerName(name);
             }
             else if (turn == 3)
             {
                 P4.GetComponentInChildren<TMP_Text>().text = name.ToUpper();
+                //PlayerStatsHeader.text = name.ToUpper() + " STATS";
+                Player4.setPlayerName(name);
             }
         }
 
@@ -99,51 +108,62 @@ namespace PlayerSpace
             card.SetActive(!card.activeInHierarchy);
         }
 
-        public void generateCard(Player player)
+        public void callCard(Player player)
         {
+            PlayerStatsHeader.text = player.playerName.ToUpper() + " STATS";
             CarCountNum.text = player.numPeople.ToString();
             JobTitle.text = player.jobTitle;
             JobSalary.text = player.salary.ToString();
             BonusNum.text = player.bonus.ToString();
             FStatusArray.text = player.finStatus;
         }
-    }
 
+    /*
+        public static void generateCard()
+        {
+            CarCountNum.text = Player1.numPeople.ToString();
+            JobTitle.text = Player1.jobTitle;
+            JobSalary.text = Player1.salary.ToString();
+            BonusNum.text = Player1.bonus.ToString();
+            FStatusArray.text = Player1.finStatus;
+        }*/
+    }
+/*
     public class PlayerMakers
     {
         public static int turn;
 
-        public void createPlayer(string name, int turn)
+        public static void createPlayer(string name, int turn)
         {
             if (turn % 4 == 0)
             {
                 Player player1 = new Player(name);
                 Debug.Log(name);
-                //generateCard(player1);
+                (new PlayerNames()).generateCard(player1);
             }
             else if (turn % 4 == 1)
             {
                 Player player2 = new Player(name);
                 Debug.Log(name);
-                //generateCard(player2);
+                generateCard(player2);
             }
             else if (turn % 4 == 2)
             {
                 Player player3 = new Player(name);
                 Debug.Log(name);
-                //generateCard(player3);
+                generateCard(player3);
             }
             else if (turn % 4 == 3)
             {
                 Player player4 = new Player(name);
                 Debug.Log(name);
-                //generateCard(player4);
+                generateCard(player4);
             }
             turn++;
         }
-    }
-
-    public class Player
+    }*/
+/*
+    public class Player : MonoBehaviour
     {
         public string playerName;
         public string jobTitle;
@@ -158,6 +178,18 @@ namespace PlayerSpace
         public Player(string name)
         {
             playerName = name;
+            jobTitle = "Unemployed";
+            balance = 0;
+            numPeople = 0;
+            finStatus = "Unknown";
+            salary = 0;
+            bonus = 0;
+            homes = new ArrayList();
+        }
+
+        public Player()
+        {
+            playerName = "Unnamed";
             jobTitle = "Unemployed";
             balance = 0;
             numPeople = 0;
@@ -198,5 +230,5 @@ namespace PlayerSpace
         {
             this.homes.Add(color);
         }
-    }
+    }*/
 }

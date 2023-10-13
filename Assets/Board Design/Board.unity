@@ -1460,7 +1460,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 124337150}
-        m_TargetAssemblyTypeName: PlayerNames, Assembly-CSharp
+        m_TargetAssemblyTypeName: PlayerSpace.PlayerNames, Assembly-CSharp
         m_MethodName: ReadInput
         m_Mode: 5
         m_Arguments:
@@ -1589,14 +1589,18 @@ MonoBehaviour:
   P3: {fileID: 1125477056}
   P2: {fileID: 559212480}
   P1: {fileID: 774849623}
-  HUD: {fileID: 0}
-  Player1StatsHeader: {fileID: 324395181}
+  HUD: {fileID: 1309311895}
+  PlayerStatsHeader: {fileID: 324395181}
   CarCountNum: {fileID: 459275590}
   JobTitle: {fileID: 1873894147}
   JobSalary: {fileID: 2108853267}
   BonusNum: {fileID: 473534417}
   HomesArray: {fileID: 266339212}
   FStatusArray: {fileID: 1544491101}
+  Player1: {fileID: 774849627}
+  Player2: {fileID: 559212483}
+  Player3: {fileID: 1125477059}
+  Player4: {fileID: 1688403916}
 --- !u!1001 &124452346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2608,7 +2612,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Red, blue,
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5844,6 +5848,8 @@ GameObject:
   - component: {fileID: 559212482}
   - component: {fileID: 559212481}
   - component: {fileID: 559212480}
+  - component: {fileID: 559212484}
+  - component: {fileID: 559212483}
   m_Layer: 5
   m_Name: P2
   m_TagString: Untagged
@@ -5914,7 +5920,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 559212481}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 559212484}
+        m_TargetAssemblyTypeName: PlayerSpace.PlayerNames, Assembly-CSharp
+        m_MethodName: togglePlayerCard
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 611469690}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 559212484}
+        m_TargetAssemblyTypeName: PlayerSpace.PlayerNames, Assembly-CSharp
+        m_MethodName: callCard
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 559212483}
+          m_ObjectArgumentAssemblyTypeName: Player, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &559212481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5953,6 +5983,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559212478}
   m_CullTransparentMesh: 1
+--- !u!114 &559212483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559212478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f684d9af85ed5e4a9e69a6ce4bd4cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Unnamed
+  jobTitle: Unemployed
+  balance: 0
+  numPeople: 0
+  finStatus: Unknown
+  salary: 0
+  bonus: 0
+--- !u!114 &559212484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559212478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d9ad0ba619e8649927a05502265cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameInput: {fileID: 680990018}
+  PlayerNumber: {fileID: 206533774}
+  NameFieldText: {fileID: 1234698857}
+  NameInputField: {fileID: 124337147}
+  P4: {fileID: 1688403913}
+  P3: {fileID: 1125477056}
+  P2: {fileID: 559212480}
+  P1: {fileID: 774849623}
+  HUD: {fileID: 1309311895}
+  PlayerStatsHeader: {fileID: 324395181}
+  CarCountNum: {fileID: 459275590}
+  JobTitle: {fileID: 1873894147}
+  JobSalary: {fileID: 2108853267}
+  BonusNum: {fileID: 473534417}
+  HomesArray: {fileID: 266339212}
+  FStatusArray: {fileID: 1544491101}
+  Player1: {fileID: 774849627}
+  Player2: {fileID: 559212483}
+  Player3: {fileID: 1125477059}
+  Player4: {fileID: 1688403916}
 --- !u!1 &567633588
 GameObject:
   m_ObjectHideFlags: 0
@@ -6538,13 +6619,14 @@ GameObject:
   - component: {fileID: 611469694}
   - component: {fileID: 611469693}
   - component: {fileID: 611469692}
+  - component: {fileID: 611469695}
   m_Layer: 5
-  m_Name: P1Card
+  m_Name: PCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &611469691
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6653,6 +6735,38 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &611469695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611469690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d9ad0ba619e8649927a05502265cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameInput: {fileID: 680990018}
+  PlayerNumber: {fileID: 206533774}
+  NameFieldText: {fileID: 1234698857}
+  NameInputField: {fileID: 124337147}
+  P4: {fileID: 1688403913}
+  P3: {fileID: 1125477056}
+  P2: {fileID: 559212480}
+  P1: {fileID: 774849623}
+  HUD: {fileID: 1309311895}
+  PlayerStatsHeader: {fileID: 324395181}
+  CarCountNum: {fileID: 459275590}
+  JobTitle: {fileID: 1873894147}
+  JobSalary: {fileID: 2108853267}
+  BonusNum: {fileID: 473534417}
+  HomesArray: {fileID: 266339212}
+  FStatusArray: {fileID: 1544491101}
+  Player1: {fileID: 774849627}
+  Player2: {fileID: 559212483}
+  Player3: {fileID: 1125477059}
+  Player4: {fileID: 1688403916}
 --- !u!1001 &621388175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8818,6 +8932,8 @@ GameObject:
   - component: {fileID: 774849625}
   - component: {fileID: 774849624}
   - component: {fileID: 774849623}
+  - component: {fileID: 774849626}
+  - component: {fileID: 774849627}
   m_Layer: 5
   m_Name: P1
   m_TagString: Untagged
@@ -8888,7 +9004,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 774849624}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 774849626}
+        m_TargetAssemblyTypeName: PlayerSpace.PlayerNames, Assembly-CSharp
+        m_MethodName: togglePlayerCard
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 611469690}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 774849626}
+        m_TargetAssemblyTypeName: PlayerSpace.PlayerNames, Assembly-CSharp
+        m_MethodName: callCard
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 774849627}
+          m_ObjectArgumentAssemblyTypeName: Player, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &774849624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8927,6 +9067,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774849621}
   m_CullTransparentMesh: 1
+--- !u!114 &774849626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774849621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d9ad0ba619e8649927a05502265cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameInput: {fileID: 680990018}
+  PlayerNumber: {fileID: 206533774}
+  NameFieldText: {fileID: 1234698857}
+  NameInputField: {fileID: 124337147}
+  P4: {fileID: 1688403913}
+  P3: {fileID: 1125477056}
+  P2: {fileID: 559212480}
+  P1: {fileID: 774849623}
+  HUD: {fileID: 1309311895}
+  PlayerStatsHeader: {fileID: 324395181}
+  CarCountNum: {fileID: 459275590}
+  JobTitle: {fileID: 1873894147}
+  JobSalary: {fileID: 2108853267}
+  BonusNum: {fileID: 473534417}
+  HomesArray: {fileID: 266339212}
+  FStatusArray: {fileID: 1544491101}
+  Player1: {fileID: 774849627}
+  Player2: {fileID: 559212483}
+  Player3: {fileID: 1125477059}
+  Player4: {fileID: 1688403916}
+--- !u!114 &774849627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774849621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f684d9af85ed5e4a9e69a6ce4bd4cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Unnamed
+  jobTitle: Unemployed
+  balance: 0
+  numPeople: 0
+  finStatus: Unknown
+  salary: 0
+  bonus: 0
 --- !u!1001 &783456620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12995,6 +13186,8 @@ GameObject:
   - component: {fileID: 1125477058}
   - component: {fileID: 1125477057}
   - component: {fileID: 1125477056}
+  - component: {fileID: 1125477060}
+  - component: {fileID: 1125477059}
   m_Layer: 5
   m_Name: P3
   m_TagString: Untagged
@@ -13065,7 +13258,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1125477057}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1125477060}
+        m_TargetAssemblyTypeName: PlayerSpace.PlayerNames, Assembly-CSharp
+        m_MethodName: togglePlayerCard
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 611469690}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1125477060}
+        m_TargetAssemblyTypeName: PlayerSpace.PlayerNames, Assembly-CSharp
+        m_MethodName: callCard
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1125477059}
+          m_ObjectArgumentAssemblyTypeName: Player, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1125477057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13104,6 +13321,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125477054}
   m_CullTransparentMesh: 1
+--- !u!114 &1125477059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125477054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f684d9af85ed5e4a9e69a6ce4bd4cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Unnamed
+  jobTitle: Unemployed
+  balance: 0
+  numPeople: 0
+  finStatus: Unknown
+  salary: 0
+  bonus: 0
+--- !u!114 &1125477060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125477054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d9ad0ba619e8649927a05502265cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameInput: {fileID: 680990018}
+  PlayerNumber: {fileID: 206533774}
+  NameFieldText: {fileID: 1234698857}
+  NameInputField: {fileID: 124337147}
+  P4: {fileID: 1688403913}
+  P3: {fileID: 1125477056}
+  P2: {fileID: 559212480}
+  P1: {fileID: 774849623}
+  HUD: {fileID: 1309311895}
+  PlayerStatsHeader: {fileID: 324395181}
+  CarCountNum: {fileID: 459275590}
+  JobTitle: {fileID: 1873894147}
+  JobSalary: {fileID: 2108853267}
+  BonusNum: {fileID: 473534417}
+  HomesArray: {fileID: 266339212}
+  FStatusArray: {fileID: 1544491101}
+  Player1: {fileID: 774849627}
+  Player2: {fileID: 559212483}
+  Player3: {fileID: 1125477059}
+  Player4: {fileID: 1688403916}
 --- !u!4 &1129690224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b7f4c3ad61c3e4252aab46762b88c841, type: 3}
@@ -19143,6 +19411,8 @@ GameObject:
   - component: {fileID: 1688403915}
   - component: {fileID: 1688403914}
   - component: {fileID: 1688403913}
+  - component: {fileID: 1688403917}
+  - component: {fileID: 1688403916}
   m_Layer: 5
   m_Name: P4
   m_TagString: Untagged
@@ -19215,13 +19485,25 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 124337150}
-        m_TargetAssemblyTypeName: PlayerNames, Assembly-CSharp
+      - m_Target: {fileID: 1688403917}
+        m_TargetAssemblyTypeName: PlayerSpace.PlayerNames, Assembly-CSharp
         m_MethodName: togglePlayerCard
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 611469690}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1688403917}
+        m_TargetAssemblyTypeName: PlayerSpace.PlayerNames, Assembly-CSharp
+        m_MethodName: callCard
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1688403916}
+          m_ObjectArgumentAssemblyTypeName: Player, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -19265,6 +19547,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688403911}
   m_CullTransparentMesh: 1
+--- !u!114 &1688403916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688403911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f684d9af85ed5e4a9e69a6ce4bd4cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Unnamed
+  jobTitle: Unemployed
+  balance: 0
+  numPeople: 0
+  finStatus: Unknown
+  salary: 0
+  bonus: 0
+--- !u!114 &1688403917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688403911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d9ad0ba619e8649927a05502265cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameInput: {fileID: 680990018}
+  PlayerNumber: {fileID: 206533774}
+  NameFieldText: {fileID: 1234698857}
+  NameInputField: {fileID: 124337147}
+  P4: {fileID: 1688403913}
+  P3: {fileID: 1125477056}
+  P2: {fileID: 559212480}
+  P1: {fileID: 774849623}
+  HUD: {fileID: 1309311895}
+  PlayerStatsHeader: {fileID: 324395181}
+  CarCountNum: {fileID: 459275590}
+  JobTitle: {fileID: 1873894147}
+  JobSalary: {fileID: 2108853267}
+  BonusNum: {fileID: 473534417}
+  HomesArray: {fileID: 266339212}
+  FStatusArray: {fileID: 1544491101}
+  Player1: {fileID: 774849627}
+  Player2: {fileID: 559212483}
+  Player3: {fileID: 1125477059}
+  Player4: {fileID: 1688403916}
 --- !u!1001 &1693036648
 PrefabInstance:
   m_ObjectHideFlags: 0
