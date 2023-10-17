@@ -111,9 +111,9 @@ namespace EasyUI.PickerWheelUI {
 
             int index = GetRandomPieceIndex () ; //This is where steps come from
             WheelPiece piece = wheelPieces [ index] ;
-                Debug.LogError("Wheel piece chosen is:" + index);
+                Debug.Log("Wheel piece chosen is:" + index);
                 steps = index + 1;
-                Debug.LogError("Steps are:" + steps);
+                Debug.Log("Steps are:" + steps);
 
                 if (piece.Chance == 0 && nonZeroChancesIndices.Count != 0) {
                index = nonZeroChancesIndices [ Random.Range (0, nonZeroChancesIndices.Count) ] ;
@@ -197,9 +197,6 @@ namespace EasyUI.PickerWheelUI {
                nonZeroChancesIndices.Add (i) ;
          }
       }
-
-
-
 
       private void OnValidate () {
          if (PickerWheelTransform != null)

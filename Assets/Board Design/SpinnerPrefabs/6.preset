@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 6
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: aa4bebc7bfe9d394592353853ce4bc26, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: linePrefab
+    value: 
+    objectReference: {fileID: 1258666099951334, guid: 052d5aa0d2632e04c90d4d5027f9dd37, type: 3}
+  - target: {fileID: 0}
+    propertyPath: linesParent
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: PickerWheelTransform
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelCircle
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPiecePrefab
+    value: 
+    objectReference: {fileID: 1013547879587396, guid: a10fef7bc23b5a64a929387e97c9b936, type: 3}
+  - target: {fileID: 0}
+    propertyPath: wheelPiecesParent
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: spinDuration
+    value: 20
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelSize
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.size
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[0].Icon
+    value: 
+    objectReference: {fileID: 21300000, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[0].Label
+    value: Lorem
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[0].Amount
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[0].Chance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[0].Index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[0]._weight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[1].Icon
+    value: 
+    objectReference: {fileID: 21300000, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[1].Label
+    value: Lorem
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[1].Amount
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[1].Chance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[1].Index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[1]._weight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[2].Icon
+    value: 
+    objectReference: {fileID: 21300002, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[2].Label
+    value: Iposum
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[2].Amount
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[2].Chance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[2].Index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[2]._weight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[3].Icon
+    value: 
+    objectReference: {fileID: 21300004, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[3].Label
+    value: Tupala
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[3].Amount
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[3].Chance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[3].Index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[3]._weight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[4].Icon
+    value: 
+    objectReference: {fileID: 21300030, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[4].Label
+    value: Consectetur
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[4].Amount
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[4].Chance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[4].Index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[4]._weight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[5].Icon
+    value: 
+    objectReference: {fileID: 21300030, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[5].Label
+    value: Consectetur
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[5].Amount
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[5].Chance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[5].Index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[5]._weight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[6].Icon
+    value: 
+    objectReference: {fileID: 21300030, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[6].Label
+    value: Consectetur
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[6].Amount
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[6].Chance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[6].Index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[6]._weight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[7].Icon
+    value: 
+    objectReference: {fileID: 21300030, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[7].Label
+    value: Consectetur
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[7].Amount
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[7].Chance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[7].Index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[7]._weight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[8].Icon
+    value: 
+    objectReference: {fileID: 21300030, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[8].Label
+    value: Consectetur
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[8].Amount
+    value: 9
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[8].Chance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[8].Index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[8]._weight
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[9].Icon
+    value: 
+    objectReference: {fileID: 21300030, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[9].Label
+    value: Consectetur
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[9].Amount
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[9].Chance
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[9].Index
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: wheelPieces.Array.data[9]._weight
+    value: 0
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []

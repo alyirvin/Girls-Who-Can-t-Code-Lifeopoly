@@ -33,6 +33,8 @@ namespace PlayerSpace
         public Player Player2;
         public Player Player3;
         public Player Player4;
+        public GameObject Spinner;
+        public TMP_Text TurnHeader;
 
         // Start is called before the first frame update
         void Start()
@@ -61,12 +63,22 @@ namespace PlayerSpace
             {
                 nextPlayer();
             }
+            if (turn == 4)
+            {
+                toggleSpinner();
+                TurnHeader.text = "";
+            }
         }
 
         public void nextPlayer()
         {
             PlayerNumber.text = (turn+1).ToString();
             NameInput.SetActive(!NameInput.activeInHierarchy);
+        }
+
+        public void toggleSpinner()
+        {
+            Spinner.SetActive(!Spinner.activeInHierarchy);
         }
 
         public void ToggleNameInput()

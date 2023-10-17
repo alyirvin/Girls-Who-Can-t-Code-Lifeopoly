@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
         playerName = name;
         jobTitle = "Unemployed";
         balance = 0;
-        numPeople = 0;
+        numPeople = 1;
         finStatus = "Unknown";
         salary = 0;
         bonus = 0;
@@ -39,10 +39,10 @@ public class Player : MonoBehaviour
 
     public Player()
     {
-        playerName = "Unnamed";
+        playerName = "";
         jobTitle = "Unemployed";
         balance = 0;
-        numPeople = 0;
+        numPeople = 1;
         finStatus = "Unknown";
         salary = 0;
         bonus = 0;
@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
         this.numPeople += add;
     }
 
-    public void getFinStatus(int stat)
+    public void setFinStatus(int stat)
     {
         this.finStatus = statuses[stat-1];
     }
